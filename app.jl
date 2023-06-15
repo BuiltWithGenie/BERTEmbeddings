@@ -99,5 +99,4 @@ end
 end
 
 @page("/", "app.jl.html")
-Server.up()
 end
