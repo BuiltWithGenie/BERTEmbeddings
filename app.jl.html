@@ -1,14 +1,25 @@
-<div style="background:white">
-<div class="row" style="padding-top:20px">
-            <q-card style="margin:auto">
-        <plotly :data="hmap_data" :layout="hmap_layout" ></plotly>
-            </q-card>
-            <q-card style="margin:auto">
+<div id="i0d1"></div>
+<div id="i2dks"></div>
+<header class="st-header q-pa-sm">
+    <h1 class="st-header__title text-h3" style="display: flex; justify-content: center;">Semantic relationship analysis with BERT embeddings</h1>
+</header>
+<div class="st-col col-12 col-sm st-module"></div>
+<div class="row">
+    <div class="st-col col-12 col-sm st-module" style="display: flex; justify-content: center;">
+        <plotly :data="hmap_data" :layout="hmap_layout"></plotly>
+    </div>
+    <div class="st-col col-12 col-sm st-module" style="display: flex; justify-content: center;">
         <plotly :data="scatter_data" :layout="scatter_layout"></plotly>
-            </q-card>
+    </div>
 </div>
-<q-card style="margin-top:30px;padding-left:20px">
-<q-input v-model="text" style=""> </q-input>
-<q-btn color="primary" style="margin-top:5px;margin-bottom:5px;" v-on:click="process = !process" :loading="processing" text-color="black" label="Process" />
-</q-card>
+<div class="row">
+    <div class="st-col col-12 col-sm st-module">
+        <q-input v-model="text"> </q-input>
+    </div>
+    
+        <div  style="display: flex; justify-content: center;">
+            <q-btn color="primary" v-on:click="process = !process" :loading="processing" text-color="black" label="Process" id="i1hvp">
+            </q-btn>
+        </div>
+
 </div>

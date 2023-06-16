@@ -72,8 +72,8 @@ end
 @app begin 
     @out hmap_data = [heatmap()]
     @out scatter_data = [scatter()]
-    @out hmap_layout = PlotlyBase.Layout(title="Semantic relationship heatmap", height=500,width=500, margin=attr(l=1, r=1, t=40, b=1))
-    @out scatter_layout = PlotlyBase.Layout(title="2D PCA embeddings", height=500,width=500, margin=attr(l=1, r=1, t=40, b=1))
+    @out hmap_layout = PlotlyBase.Layout(title="Semantic relationship heatmap", height=500,width=500, margin=attr(l=20, r=20, t=45, b=20))
+    @out scatter_layout = PlotlyBase.Layout(title="2D PCA embeddings", height=500,width=500, margin=attr(l=20, r=20, t=45, b=20))
     @in text = "The bank robber stole from the bank vault and went to the river bank"
     @in process = false
     @out processing = false
